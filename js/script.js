@@ -7,7 +7,7 @@ const typingText = document.querySelector(".typing-text p"),
   cpmTag = document.querySelector(".cpm span");
 
 let timer,
-  maxTime = 60,
+  maxTime = 120,
   timeLeft = maxTime,
   charIndex = (mistakes = isTyping = 0);
 
