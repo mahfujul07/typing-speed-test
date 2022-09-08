@@ -52,7 +52,7 @@ function initTyping() {
     characters[charIndex].classList.add("active");
 
     let wpm = Math.round(
-      ((charIndex - mistakes) / 5 / (maxTime - timeLeft)) * 120
+      ((charIndex - mistakes) / 5 / (maxTime - timeLeft)) * 60
     );
     wpm = wpm < 0 || !wpm || wpm === Infinity ? 0 : wpm;
 
@@ -70,7 +70,7 @@ function initTimer() {
     timeLeft--;
     timeTag.innerText = timeLeft;
     let wpm = Math.round(
-      ((charIndex - mistakes) / 5 / (maxTime - timeLeft)) * 120
+      ((charIndex - mistakes) / 5 / (maxTime - timeLeft)) * 60
     );
     wpmTag.innerText = wpm;
   } else {
