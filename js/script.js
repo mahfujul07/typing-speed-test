@@ -52,7 +52,7 @@ function initTyping() {
     characters[charIndex].classList.add("active");
 
     let wpm = Math.round(
-      ((charIndex - mistakes) / 5 / (maxTime - timeLeft)) * 60
+      ((charIndex - mistakes) / 5 / (maxTime - timeLeft)) * 120
     );
     wpm = wpm < 0 || !wpm || wpm === Infinity ? 0 : wpm;
 
