@@ -70,7 +70,7 @@ function initTimer() {
     timeLeft--;
     timeTag.innerText = timeLeft;
     let wpm = Math.round(
-      ((charIndex - mistakes) / 5 / (maxTime - timeLeft)) * 60
+      ((charIndex - mistakes) / 5 / (maxTime - timeLeft)) * 120
     );
     wpmTag.innerText = wpm;
   } else {
